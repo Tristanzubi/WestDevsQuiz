@@ -1,0 +1,139 @@
+:root {
+    --background-color: rgb(226, 236, 236);
+    --color-blue: rgb(112, 213, 236);
+    --reponse-hover: rgb(134, 229, 251);
+    --color-red: rgb(255, 128, 121);
+    --next-hover: rgb(255, 147, 141);
+    --font-color: rgb(24, 73, 113);
+    --font-title: "Just Another Hand", cursive;
+    --font-text: "Capriola", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    line-height: 1.5;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+
+
+    img {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-weight: 100;
+        font-family: var(--font-title);
+    }
+}
+
+main {
+    font-family: var(--font-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    font-size: 1.5ch;
+    text-align: center;
+
+
+
+
+    p {
+        background-color: var(--color-blue);
+        filter: drop-shadow(0px 5px 3px #767676);
+        -webkit-filter: drop-shadow(0px 5px 3px #767676);
+        -moz-filter: drop-shadow(0px 5px 3px #767676);
+        width: 300px;
+        height: 90px;
+        border-radius: 30px;
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #timeout {
+        background-color: var(--color-red);
+        color: white;
+        filter: drop-shadow(0px 5px 3px #767676);
+        -webkit-filter: drop-shadow(0px 5px 3px #767676);
+        -moz-filter: drop-shadow(0px 5px 3px #767676);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        height: 65px;
+        width: 125px;
+        margin: 20px 0 20px 0;
+        border-radius: 50%;
+    }
+
+    #reponses {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .reponse {
+        background-color: var(--color-blue);
+        filter: drop-shadow(0px 5px 3px #767676);
+        -webkit-filter: drop-shadow(0px 5px 3px #767676);
+        -moz-filter: drop-shadow(0px 5px 3px #767676);
+        border-radius: 15px;
+        padding: 0 15px;
+        width: 300px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .reponse:hover {
+        background-color: var(--reponse-hover);
+    }
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 15vh;
+
+    button {
+        background-color: var(--color-red);
+        color: white;
+        filter: drop-shadow(0px 5px 3px #767676);
+        -webkit-filter: drop-shadow(0px 5px 3px #767676);
+        -moz-filter: drop-shadow(0px 5px 3px #767676);
+        display: flex;
+        justify-content: center;
+        border-style: none;
+        cursor: pointer;
+        border-radius: 50%;
+        height: 50px;
+        width: 100px;
+        padding: 5px 30px;
+        margin: 0 20px 0 0;
+        font-size: 2rem;
+    }
+
+    button:hover {
+        background-color: var(--next-hover);
+    }
+}
