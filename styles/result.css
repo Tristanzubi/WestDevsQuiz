@@ -9,16 +9,20 @@ body {
 
 header {
     display: flex;
+    border: solid 2px red;
+    height: 10vh;
 }
 
 header img {
-    width: 100px;
+    width: 89px;
+    height: 100px;
 }
 
 header h2 {
     font-family: "Just another hand", cursive;
     font-size: 48px;
     font-weight: 100;
+    color: rgba(24, 73, 113, 1);
 }
 
 main {
@@ -26,21 +30,70 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
+    border: solid 2px red;
+    height: 80vh;
 }
 
 section img {
     width: 267px;
     height: 299px;
+    margin: 0 0 1.5rem 0;
+}
+
+main section p {
+    background-color: rgba(24, 73, 113, 1);
+    padding: 2rem;
+    margin: 0 0 1rem 0;
+    color: white;
+    font-family: 'Capriola';
+    font-size: 30px;
+    text-align: center;
+    border-radius: 25px;
+    border-style: none;
+    filter: drop-shadow(0px 5px 3px #767676);
+    -webkit-filter: drop-shadow(0px 5px 3px #767676);
+    -moz-filter: drop-shadow(0px 5px 3px #767676);
 }
 
 main button {
     font-size: 40px;
     width: 226px;
     height: 90px;
+    margin: 2rem 0 2rem 0;
+    padding: 1rem 0 1rem 0;
+    color: white;
     font-family: 'Capriola';
-    font-size: 22px;
-    background: rgba(255, 128, 121, 1);
+    font-size: 40px;
+    background-color: rgba(255, 128, 121, 1);
     border-radius: 50%;
     border-style: none;
+    filter: drop-shadow(0px 5px 3px #767676);
+    -webkit-filter: drop-shadow(0px 5px 3px #767676);
+    -moz-filter: drop-shadow(0px 5px 3px #767676);
+}
+
+footer {
+    margin: 1rem 0 0 0;
+    border: solid 2px red;
+    height: 10vh;
+}
+
+footer ul {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+footer li {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+footer img {
+    width: 35px;
+    height: 35px;
 }
