@@ -1,8 +1,10 @@
 :root {
     --background-color: rgb(226, 236, 236);
     --color-blue: rgb(112, 213, 236);
+    --accueil-hover: rgb(134, 229, 251);
     --color-red: rgb(255, 128, 121);
     --font-color: rgb(24, 73, 113);
+    --button-hover: rgb(2, 18, 32);
     --font-title: "Just Another Hand", cursive;
     --font-text: "Capriola", Sans-serif;
 }
@@ -21,6 +23,44 @@ body {
     background-color: var(--background-color);
 }
 
+nav {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.nav_button {
+    background-color: var(--color-blue);
+    color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px 0 auto;
+    font-size: 18px;
+    font-family: var(--font-text);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.nav_button :hover {
+    font-family: var(--font-text);
+    background-color: var(--accueil-hover);
+    color: #000;
+    transform: scale(1.1);
+    transition: all 0.1ms ease-in-out;
+}
+
+
+nav #logo {
+    width: 64px;
+    height: auto;
+    background-color: var(--background-color);
+
+}
 
 
 h1 {
@@ -42,6 +82,7 @@ h2 {
 
 
 #equipe {
+    font-family: var(--font-text);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -56,47 +97,6 @@ h2 {
     align-items: center;
 }
 
-#commentaires {
-    background-color: var(--color-blue);
-    padding: 20px;
-    border-radius: 20px;
-    font-size: 16px;
-    font-style: italic;
-    text-align: center;
-    margin: 20px;
-    max-width: 90%;
-    box-shadow: 3px 3px 6px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-
-
-}
-
-.nav_button {
-    background-color: var(--color-blue);
-    color: #000;
-    text-decoration: none;
-    padding: 10px 15px;
-    margin: 0 10px 0 auto;
-    font-size: 18px;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 1px 1px 2px;
-    cursor: pointer;
-    text-align: center;
-
-}
-
-
-nav #logo {
-    width: 64px;
-    height: auto;
-    background-color: var(--background-color);
-
-}
 
 #avatars,
 img {
@@ -108,7 +108,20 @@ img {
 
 }
 
+#commentaires {
+    background-color: var(--color-blue);
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: var(--font-text);
+    text-align: center;
+    margin: 20px;
+    max-width: 90%;
+    box-shadow: 3px 3px 6px;
+}
+
 #suggestions {
+    font-family: var(--font-text);
     background-color: var(--color-blue);
     border-radius: 20px;
     text-align: center;
@@ -122,6 +135,7 @@ img {
 #suggestions h3 {
     font-size: 18px;
     font-weight: bold;
+    font-family: var(--font-text);
     color: var(--font-color);
     margin-bottom: 15px;
 }
@@ -135,10 +149,12 @@ img {
     border: 1px solid #000;
     border-radius: 10px;
     font-size: 14px;
+    font-family: var(--font-text);
     background-color: var(--color-blue);
 }
 
-/ #suggestions textarea {
+#suggestions textarea {
+    font-family: var(--font-text);
     height: 100px;
     resize: none;
 }
@@ -151,18 +167,26 @@ img {
     border: none;
     border-radius: 10px;
     font-size: 16px;
+    font-family: var(--font-text);
     cursor: pointer;
     margin-top: 10px;
 }
 
 #suggestions button:hover {
-    background-color: var(--color-blue);
+    background-color: var(--button-hover);
+    font-family: var(--font-text);
 }
 
 
 
 
 @media screen and (min-width: 768px) {
+
+    .nav_button {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+
 
 
     #equipe {
@@ -183,8 +207,5 @@ img {
         margin: 20px auto;
     }
 
-    .nav_button {
-        font-size: 18px;
-        padding: 12px 25px;
-    }
+
 }
