@@ -1,3 +1,13 @@
+:root {
+    --background-color: rgb(226, 236, 236);
+    --color-blue: rgb(112, 213, 236);
+    --color-red: rgb(255, 128, 121);
+    --font-color: rgb(24, 73, 113);
+    --font-title: "Just Another Hand", cursive;
+    --font-text: "Capriola", Sans-serif;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,24 +15,29 @@
 }
 
 
+
 body {
     font-size: sans-serif;
-    background-color: #e2ecec;
+    background-color: var(--background-color);
 }
 
+
+
 h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #1d3557;
+    font-size: 56px;
+    font-weight: 100;
+    color: var(--font-color);
     text-align: center;
     margin: 10px 0;
+    font-family: var(--font-title);
 }
 
 h2 {
     font-size: 38px;
-    color: #1d3557;
+    color: var(--font-color);
     text-align: center;
     margin-bottom: 20px;
+    font-family: var(--font-text);
 }
 
 
@@ -42,7 +57,7 @@ h2 {
 }
 
 #commentaires {
-    background-color: #70d5ec;
+    background-color: var(--color-blue);
     padding: 20px;
     border-radius: 20px;
     font-size: 16px;
@@ -61,7 +76,7 @@ nav {
 }
 
 .nav_button {
-    background-color: #70d5ec;
+    background-color: var(--color-blue);
     color: #000;
     text-decoration: none;
     padding: 10px 15px;
@@ -79,7 +94,7 @@ nav {
 nav #logo {
     width: 64px;
     height: auto;
-    background-color: #e2ecec;
+    background-color: var(--background-color);
 
 }
 
@@ -88,26 +103,26 @@ img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #ff8079;
+    background-color: var(--color-red);
     padding: 10px;
 
 }
 
 #suggestions {
-    background-color: #70d5ec;
+    background-color: var(--color-blue);
     border-radius: 20px;
     text-align: center;
     margin: 20px auto;
     max-width: 90%;
     box-shadow: 5px 5px 10px;
-    border: 2px solid #70d5ec;
+    border: 2px solid var(--color-blue);
 }
 
 
 #suggestions h3 {
     font-size: 18px;
     font-weight: bold;
-    color: #1d3557;
+    color: var(--font-color);
     margin-bottom: 15px;
 }
 
@@ -120,7 +135,7 @@ img {
     border: 1px solid #000;
     border-radius: 10px;
     font-size: 14px;
-    background-color: #70d5ec;
+    background-color: var(--color-blue);
 }
 
 / #suggestions textarea {
@@ -130,7 +145,7 @@ img {
 
 
 #suggestions button {
-    background-color: #177f96;
+    background-color: var(--font-color);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -141,7 +156,7 @@ img {
 }
 
 #suggestions button:hover {
-    background-color: #70d5ec;
+    background-color: var(--color-blue);
 }
 
 
