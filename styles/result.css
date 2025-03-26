@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(112, 213, 236, 1);
+}
+
+header {
+    display: flex;
+}
+
+header img {
+    width: 100px;
+}
+
+header h2 {
+    font-family: "Just another hand", cursive;
+    font-size: 48px;
+    font-weight: 100;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+section img {
+    width: 267px;
+    height: 299px;
+}
+
+main button {
+    font-size: 40px;
+    width: 226px;
+    height: 90px;
+    font-family: 'Capriola';
+    font-size: 22px;
+    background: rgba(255, 128, 121, 1);
+    border-radius: 50%;
+    border-style: none;
+}
