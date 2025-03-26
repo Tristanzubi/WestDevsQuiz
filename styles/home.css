@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Just+Another+Hand&display=swap');
+
+:root {
+    --primary-color: rgba(112, 213, 236, 1);
+    --secondary-color: rgba(226, 236, 236, 1);
+    --font-color: rgba(24, 73, 113, 1);
+    --button-color: rgba(255, 128, 121, 1);
+    --white-color: rgba(255, 255, 255, 1);
+    --font-title: "Just Another Hand", cursive;
+    --font-text: "Capriola", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+}
+
+header {
+    height: 25vh;
+}
+
+header h1 {
+    font-family: var(--font-title);
+    font-weight: 100;
+    text-align: center;
+    font-size: 96px;
+    color: var(--font-color);
+    margin: 0;
+    padding: 64px 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+}
+
+section img {
+    width: 265px;
+}
+
+
+section a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 226px;
+    height: 90px;
+    background-color: var(--button-color);
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+section a p {
+    color: var(--white-color);
+    font-family: var(--font-text);
+    font-size: 40px;
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    margin: 5px;
+}
+
+footer div a {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    text-decoration: none;
+    font-family: var(--font-text);
+    font-size: 16px;
+    padding: 0.5rem;
+    border-radius: 15px;
+    margin: .5rem;
+
+}
+
+footer li img {
+    width: 35px;
+}
