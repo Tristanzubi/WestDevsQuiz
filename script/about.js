@@ -25,12 +25,12 @@ form.addEventListener("submit", (event) => {
 
     if (nom === "" || email === "" || message === "") {
         alert("Tous les champs doivent être remplis.");
-        return;
+
     }
 
     if (!validateEmail(email)) {
         alert("Veuillez entrer une adresse email valide.");
-        return;
+
     }
 
     alert("Formulaire envoyé avec succès !");
