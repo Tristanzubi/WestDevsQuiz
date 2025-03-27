@@ -1,0 +1,211 @@
+:root {
+    --background-color: rgb(226, 236, 236);
+    --color-blue: rgb(112, 213, 236);
+    --accueil-hover: rgb(134, 229, 251);
+    --color-red: rgb(255, 128, 121);
+    --font-color: rgb(24, 73, 113);
+    --button-hover: rgb(2, 18, 32);
+    --font-title: "Just Another Hand", cursive;
+    --font-text: "Capriola", Sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-size: sans-serif;
+    background-color: var(--background-color);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.nav_button {
+    background-color: var(--color-blue);
+    color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px 0 auto;
+    font-size: 18px;
+    font-family: var(--font-text);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.nav_button :hover {
+    font-family: var(--font-text);
+    background-color: var(--accueil-hover);
+    color: #000;
+    transform: scale(1.1);
+    transition: all 0.1ms ease-in-out;
+}
+
+
+nav #logo {
+    width: 64px;
+    height: auto;
+    background-color: var(--background-color);
+
+}
+
+
+h1 {
+    font-size: 56px;
+    font-weight: 100;
+    color: var(--font-color);
+    text-align: center;
+    margin: 10px 0;
+    font-family: var(--font-title);
+}
+
+h2 {
+    font-size: 38px;
+    color: var(--font-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: var(--font-text);
+}
+
+
+#equipe {
+    font-family: var(--font-text);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.membre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#avatars,
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-red);
+    padding: 10px;
+
+}
+
+#commentaires {
+    background-color: var(--color-blue);
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: var(--font-text);
+    text-align: center;
+    margin: 20px;
+    max-width: 90%;
+    box-shadow: 3px 3px 6px;
+}
+
+#suggestions {
+    font-family: var(--font-text);
+    background-color: var(--color-blue);
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 5px 5px 10px;
+    border: 2px solid var(--color-blue);
+}
+
+
+#suggestions h3 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--font-text);
+    color: var(--font-color);
+    margin-bottom: 15px;
+}
+
+
+#suggestions input,
+#suggestions textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: var(--font-text);
+    background-color: var(--color-blue);
+}
+
+#suggestions textarea {
+    font-family: var(--font-text);
+    height: 100px;
+    resize: none;
+}
+
+
+#suggestions button {
+    background-color: var(--font-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: var(--font-text);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#suggestions button:hover {
+    background-color: var(--button-hover);
+    font-family: var(--font-text);
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .nav_button {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+
+
+
+    #equipe {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .membre img {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    #suggestions,
+    #commentaires {
+        width: 50%;
+        margin: 20px auto;
+    }
+
+
+}
