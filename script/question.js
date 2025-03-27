@@ -20,13 +20,12 @@ reponse.forEach(button => {
 
         if (iscorrect) {
             alert("bonne réponse");
-        } else if (secondes === 0) {
-            alert("Tu as mis trop de temps");
+            button.style.backgroundColor = "green";
         } else {
-            button.classList.add("wrong");
+            button.style.backgroundColor = "red";
             alert("mauvaise réponse");
         }
 
         button.forEach(button => button.disabled = true);
     })
-})
+});
