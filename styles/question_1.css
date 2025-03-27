@@ -151,6 +151,10 @@ footer {
     }
 }
 
+.wrong {
+    background-color: var(--color-red);
+}
+
 /*todo ------------------------ media querie------------------------- */
 
 @media screen and (min-width: 992px) {
