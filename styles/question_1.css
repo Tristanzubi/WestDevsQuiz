@@ -113,6 +113,7 @@ main {
         align-items: center;
         cursor: pointer;
         border-style: none;
+        transition: background-color 0.3s ease, opacity 0.3s ease;
 
     }
 
