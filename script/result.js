@@ -17,13 +17,13 @@
 
 // document.querySelector("#resultScore").innerText = "Votre score est de ${ score }/5 !";
 
-// if (score >= 4) {
-//     resultImage.src = '../Assets/Logo_WestDevQuiz.png';
-//     resultScore.innerText = 'Bravo !';
-// } else if (score >= 2) {
-//     resultImage.src = '../Assets/Logo_WestDevQuizBof.png';
-//     resultScore.innerText = 'Pas mal du tout !';
-// } else {
-//     resultImage.src = '../Assets/Logo_WestDevQuizBad.png';
-//     resultScore.innerText = 'Et si on révisait pour réessayer ?';
-// }
+if (score >= 4) {
+    resultImage.src = '../Assets/Logo_WestDevQuiz.png';
+    alert resultScore.innerText = 'Bravo !';
+} else if (score >= 2) {
+    resultImage.src = '../Assets/Logo_WestDevQuizBof.png';
+   alert resultScore.innerText = 'Pas mal du tout !';
+} else {
+    resultImage.src = '../Assets/Logo_WestDevQuizBad.png';
+    alert resultScore.innerText = 'Et si on révisait pour réessayer ?';
+}
