@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Just+Another+Hand&display=swap');
+
+:root {
+    --background-color: rgb(226, 236, 236);
+    --color-blue: rgb(112, 213, 236);
+    --reponse-hover: rgb(134, 229, 251);
+    --color-red: rgb(255, 128, 121);
+    --next-hover: rgb(255, 147, 141);
+    --font-color: rgb(24, 73, 113);
+    --font-title: "Just Another Hand", cursive;
+    --font-text: "Capriola", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    line-height: 1.5;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+
+    img {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 100;
+        font-family: var(--font-title);
+
+    }
+}
+
+main {
+    font-family: var(--font-text);
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    text-align: center;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 40vh;
+    }
+
+    p {
+        background-color: var(--color-blue);
+        filter: drop-shadow(0px 5px 3px #767676);
+        -webkit-filter: drop-shadow(0px 5px 3px #767676);
+        -moz-filter: drop-shadow(0px 5px 3px #767676);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5vw;
+        width: 90%;
+        height: 40%;
+        border-radius: 30px;
+        margin: 0;
+        padding: 10px;
+    }
+
+    #timeout {
+        background-color: var(--color-red);
+        color: white;
+        filter: drop-shadow(0px 5px 3px #767676);
+        -webkit-filter: drop-shadow(0px 5px 3px #767676);
+        -moz-filter: drop-shadow(0px 5px 3px #767676);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10vw;
+        width: 35dvw;
+        height: 20dvw;
+        border-radius: 50%;
+    }
+
+    #reponses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100dvw;
+        height: 60vh;
+
+    }
+
+    .reponse {
+        background-color: var(--color-blue);
+        color: var(--font-color);
+        font-family: var(--font-text);
+        filter: drop-shadow(0px 5px 3px #767676);
+        -webkit-filter: drop-shadow(0px 5px 3px #767676);
+        -moz-filter: drop-shadow(0px 5px 3px #767676);
+        font-size: 4vw;
+        border-radius: 15px;
+        padding: 0 15px;
+        width: 80%;
+        height: 18%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-style: none;
+
+    }
+
+    .reponse:hover {
+        background-color: var(--reponse-hover);
+    }
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+
+    a {
+        background-color: var(--color-red);
+        color: white;
+        filter: drop-shadow(0px 5px 3px #767676);
+        -webkit-filter: drop-shadow(0px 5px 3px #767676);
+        -moz-filter: drop-shadow(0px 5px 3px #767676);
+        margin: 0 10px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 25dvw;
+        min-height: 50px;
+        font-size: 5vh;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: var(--next-hover);
+    }
+}
+
+.wrong {
+    background-color: var(--color-red);
+}
+
+/*todo ------------------------ media querie------------------------- */
+
+@media screen and (min-width: 992px) {
+
+    header {
+        height: 20vh;
+
+        img {
+            width: 150px;
+        }
+
+        h1 {
+            font-size: 4dvw;
+            margin: 0 0 0 2dvw;
+        }
+    }
+
+    main {
+        height: 65vh;
+
+
+        section {
+            height: 50vh;
+            justify-content: space-between;
+
+            p {
+                width: 60%;
+                font-size: 2dvw;
+            }
+
+            #timeout {
+                width: 16dvw;
+                height: 8dvw;
+                font-size: 4dvw;
+            }
+        }
+
+        #reponses {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            height: 50vh;
+        }
+
+        .reponse {
+            font-size: 1.7dvw;
+            height: 6dvw;
+            width: 60%;
+        }
+    }
+
+    footer {
+        height: 15vh;
+
+        a {
+            width: 10dvw;
+            height: 5dvw;
+            font-size: 4dvw;
+            margin: 0 20px 0 0;
+        }
+    }
+}
