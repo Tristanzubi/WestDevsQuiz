@@ -1,6 +1,11 @@
 @font-face {
-    font-family: face;
-    src: url(/Assets/Just_Another_Hand);
+    font-family: "Just another hand";
+    src: url(/Assets/Just_Another_Hand/JustAnotherHand-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Capriola";
+    src: url(/Assets/Capriola/Capriola-Regular.ttf);
 }
 
 * {
