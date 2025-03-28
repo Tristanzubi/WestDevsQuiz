@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Just+Another+Hand&display=swap');
+@font-face {
+    src: url(../Assets/Just_Another_Hand/JustAnotherHand-Regular.ttf);
+    font-family: "Just Another Hand";
+}
+
+@font-face {
+    src: url(../Assets/Capriola/Capriola-Regular.ttf);
+    font-family: "Capriola";
+}
+
 
 :root {
     --primary-color: rgba(112, 213, 236, 1);
@@ -103,12 +112,27 @@ footer li img {
 }
 
 @media screen and (min-width: 995px) {
+    header {
+        height: 20vh;
+    }
+
+    header h1 {
+        padding: 30px;
+    }
+    
+    section {
+        height: 70vh;
+
+    }
+
     section img {
-        width: 300px;
+        width: 270px;
     }
 
     footer {
         margin: 0 20px 0 20px;
+        height: 10vh;
+
     }
 
     footer ul {
