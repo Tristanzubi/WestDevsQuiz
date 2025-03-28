@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Just+Another+Hand&display=swap');
+@font-face {
+    font-family: "Just Another Hand";
+    src: url("/Assets/Just_Another_Hand/JustAnotherHand-Regular.ttf")
+}
+
+@font-face {
+    font-family: "Capriola";
+    src: url("/Assets/Capriola/Capriola-Regular.ttf")
+}
 
 :root {
     --background-color: rgb(226, 236, 236);
@@ -113,6 +121,7 @@ main {
         align-items: center;
         cursor: pointer;
         border-style: none;
+        transition: background-color 0.3s ease, opacity 0.3s ease;
 
     }
 

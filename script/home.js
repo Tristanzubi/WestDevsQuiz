@@ -1,3 +1,5 @@
+localStorage.setItem("result", 0);
+
 const play = document.querySelector("#play");
 
 play.addEventListener("mouseover", () => {
