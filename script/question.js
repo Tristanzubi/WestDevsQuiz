@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 button.disabled = true;
                 button.style.opacity = "0.5";
             });
-
             if (iscorrect) {
                 button.style.backgroundColor = "rgb(112, 213, 236)";
                 button.style.opacity = "1";
@@ -62,7 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
     console.log(score);
-
 
 
     let finalScore = localStorage.getItem("result") || 0;
@@ -84,3 +82,4 @@ document.addEventListener("DOMContentLoaded", () => {
         robot.src = '../Assets/Logo_WestDevQuizBad.png';
     }
 });
+
