@@ -40,7 +40,7 @@ cd westdevsquiz
 <h3>🏠 Accueil</h3>
 <img src="https://github.com/user-attachments/assets/c9026560-6ab4-4492-bac1-3e26707168f9" alt="Accueil 1" width="500"/>
 
-<img src="https://github.com/user-attachments/assets/c0a719a3-b363-418d-8a72-a1279a259347" alt="Accueil 2" height="300"/>
+<img src="https://github.com/user-attachments/assets/c0a719a3-b363-418d-8a72-a1279a259347" alt="Accueil 2" height="200"/>
 
 <h3>❓ Question</h3>
 <img src="https://github.com/user-attachments/assets/f7a886ae-e8ad-4c5f-8f17-10fb0d09c6cd" alt="Question 1" width="500"/>
