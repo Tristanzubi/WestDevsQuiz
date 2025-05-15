@@ -11,10 +11,8 @@ Créer une application ludique en HTML, CSS et JavaScript permettant de tester s
 
 - 10 questions à choix multiples  
 - Comptage des bonnes réponses  
-- Affichage du score final  
-- Navigation linéaire (pas de retour en arrière)  
+- Affichage du score final   
 - Responsive et visuellement fun  
-- Pages supplémentaires : *À propos* et *formulaire de contact*
 
 ## 🔧 Stack technique
 
